@@ -97,3 +97,10 @@ UPDATE estudiantes SET correo = 'lucia.mendoza@gmail.com' WHERE id_estudiante = 
 UPDATE estudiantes SET correo = 'andres.silva@gmail.com' WHERE id_estudiante = 13;
 UPDATE estudiantes SET correo = 'daniela.cruz@gmail.com' WHERE id_estudiante = 14;
 UPDATE estudiantes SET correo = 'mateo.rojas@gmail.com' WHERE id_estudiante = 15;
+
+--Consultar con fechas
+SELECT * FROM estudiantes WHERE fecha_registro > '2026-02-01';
+SELECT * FROM estudiantes WHERE fecha_registro < '2026-05-01';
+SELECT * FROM estudiantes WHERE fecha_registro BETWEEN '2026-01-15' AND '2026-02-10';
+SELECT * FROM estudiantes WHERE fecha_registro = '2026-03-15';
+SELECT * FROM estudiantes WHERE curso = 'Programacion' AND fecha_registro > '2026-01-01';
