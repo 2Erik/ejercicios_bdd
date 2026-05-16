@@ -75,5 +75,8 @@ WHERE curso = 'Matematicas';
 DELETE FROM estudiantes
 WHERE edad = 19;
 
-DELETE FROM estudiantes
-WHERE edad = 23;
+DELETE FROM estudiantes;
+
+--Modificacion de tabla
+ALTER TABLE estudiantes
+ADD COLUMN correo VARCHAR(100);
