@@ -38,3 +38,27 @@ SELECT * FROM estudiantes WHERE curso = 'Base de Datos';
 SELECT * FROM estudiantes WHERE fecha_registro > '2026-03-01';
 SELECT * FROM estudiantes WHERE fecha_registro BETWEEN '2026-01-01' and '2026-04-30';
 
+--Actualizacion
+UPDATE estudiantes
+SET curso = 'Inteligencia Artificial'
+WHERE id_estudiante = 1;
+
+UPDATE estudiantes
+SET edad = 26
+WHERE id_estudiante = 5;
+
+UPDATE estudiantes
+SET fecha_registro = '2026-03-15'
+WHERE id_estudiante = 8;
+
+UPDATE estudiantes
+SET nombre = 'Fernando',
+    curso = 'Ciberseguridad',
+    edad = 24
+WHERE id_estudiante = 3;
+
+UPDATE estudiantes
+SET apellido = 'Guerrero',
+    fecha_registro = '2026-04-01'
+WHERE id_estudiante = 10;
+
