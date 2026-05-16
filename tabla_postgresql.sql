@@ -80,3 +80,20 @@ DELETE FROM estudiantes;
 --Modificacion de tabla
 ALTER TABLE estudiantes
 ADD COLUMN correo VARCHAR(100);
+
+--Actualizacion de los datos
+UPDATE estudiantes SET correo = 'juan.perez@gmail.com' WHERE id_estudiante = 1;
+UPDATE estudiantes SET correo = 'maria.lopez@gmail.com' WHERE id_estudiante = 2;
+UPDATE estudiantes SET correo = 'carlos.mora@gmail.com' WHERE id_estudiante = 3;
+UPDATE estudiantes SET correo = 'ana.vera@gmail.com' WHERE id_estudiante = 4;
+UPDATE estudiantes SET correo = 'luis.sanchez@gmail.com' WHERE id_estudiante = 5;
+UPDATE estudiantes SET correo = 'sofia.ramirez@gmail.com' WHERE id_estudiante = 6;
+UPDATE estudiantes SET correo = 'diego.castro@gmail.com' WHERE id_estudiante = 7;
+UPDATE estudiantes SET correo = 'valeria.gomez@gmail.com' WHERE id_estudiante = 8;
+UPDATE estudiantes SET correo = 'pedro.herrera@gmail.com' WHERE id_estudiante = 9;
+UPDATE estudiantes SET correo = 'camila.torres@gmail.com' WHERE id_estudiante = 10;
+UPDATE estudiantes SET correo = 'jorge.paredes@gmail.com' WHERE id_estudiante = 11;
+UPDATE estudiantes SET correo = 'lucia.mendoza@gmail.com' WHERE id_estudiante = 12;
+UPDATE estudiantes SET correo = 'andres.silva@gmail.com' WHERE id_estudiante = 13;
+UPDATE estudiantes SET correo = 'daniela.cruz@gmail.com' WHERE id_estudiante = 14;
+UPDATE estudiantes SET correo = 'mateo.rojas@gmail.com' WHERE id_estudiante = 15;
