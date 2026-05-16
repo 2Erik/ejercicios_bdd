@@ -1,4 +1,4 @@
---Creacion de la tabla 
+#Creacion de la tabla 
 CREATE TABLE estudiantes(
 	id_estudiante INT,
 	nombre VARCHAR(50),
@@ -9,7 +9,7 @@ CREATE TABLE estudiantes(
 	CONSTRAINT estudiantes_pk PRIMARY KEY(id_estudiante)
 );
 
---Insertar datos
+#Insertar datos
 INSERT INTO estudiantes 
 (id_estudiante,nombre,apellido,edad,curso,fecha_registro) 
 VALUES
@@ -29,7 +29,7 @@ VALUES
 (14,'Daniela','Cruz',23,'Base de Datos','2026-02-12'),
 (15,'Mateo','Rojas',22,'Programacion','2026-02-15');
 
---Consultas
+#Consultas
 SELECT * FROM estudiantes;
 SELECT nombre, curso FROM estudiantes;
 SELECT * FROM estudiantes WHERE edad > 18;
@@ -38,7 +38,7 @@ SELECT * FROM estudiantes WHERE curso = 'Base de Datos';
 SELECT * FROM estudiantes WHERE fecha_registro > '2026-03-01';
 SELECT * FROM estudiantes WHERE fecha_registro BETWEEN '2026-01-01' and '2026-04-30';
 
---Actualizacion
+#Actualizacion
 UPDATE estudiantes
 SET curso = 'Inteligencia Artificial'
 WHERE id_estudiante = 1;
@@ -62,7 +62,7 @@ SET apellido = 'Guerrero',
     fecha_registro = '2026-04-01'
 WHERE id_estudiante = 10;
 
---Eliminar
+#Eliminar
 DELETE FROM estudiantes
 WHERE id_estudiante = 1;
 
@@ -77,11 +77,11 @@ WHERE edad = 19;
 
 DELETE FROM estudiantes;
 
---Modificacion de tabla
+#Modificacion de tabla
 ALTER TABLE estudiantes
 ADD COLUMN correo VARCHAR(100);
 
---Actualizacion de los datos
+#Actualizacion de los datos
 UPDATE estudiantes SET correo = 'juan.perez@gmail.com' WHERE id_estudiante = 1;
 UPDATE estudiantes SET correo = 'maria.lopez@gmail.com' WHERE id_estudiante = 2;
 UPDATE estudiantes SET correo = 'carlos.mora@gmail.com' WHERE id_estudiante = 3;
@@ -98,10 +98,9 @@ UPDATE estudiantes SET correo = 'andres.silva@gmail.com' WHERE id_estudiante = 1
 UPDATE estudiantes SET correo = 'daniela.cruz@gmail.com' WHERE id_estudiante = 14;
 UPDATE estudiantes SET correo = 'mateo.rojas@gmail.com' WHERE id_estudiante = 15;
 
---Consultar con fechas
+#Consultar con fechas
 SELECT * FROM estudiantes WHERE fecha_registro > '2026-02-01';
 SELECT * FROM estudiantes WHERE fecha_registro < '2026-05-01';
 SELECT * FROM estudiantes WHERE fecha_registro BETWEEN '2026-01-15' AND '2026-02-10';
 SELECT * FROM estudiantes WHERE fecha_registro = '2026-03-15';
 SELECT * FROM estudiantes WHERE curso = 'Programacion' AND fecha_registro > '2026-01-01';
-
