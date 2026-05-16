@@ -62,3 +62,18 @@ SET apellido = 'Guerrero',
     fecha_registro = '2026-04-01'
 WHERE id_estudiante = 10;
 
+--Eliminar
+DELETE FROM estudiantes
+WHERE id_estudiante = 1;
+
+DELETE FROM estudiantes
+WHERE id_estudiante = 8;
+
+DELETE FROM estudiantes
+WHERE curso = 'Matematicas';
+
+DELETE FROM estudiantes
+WHERE edad = 19;
+
+DELETE FROM estudiantes
+WHERE edad = 23;
